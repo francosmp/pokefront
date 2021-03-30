@@ -15,7 +15,6 @@ class ModalC extends React.Component {
     this.reiniciar = this.reiniciar.bind(this);
   }
 
-
   componentWillUpdate() {
     if (this.state.result) this.updateStateOnce();
   }
@@ -49,7 +48,11 @@ class ModalC extends React.Component {
           <div class="row">
             <div class="columnl">
               <img
-                src="https://icons.iconarchive.com/icons/chrisl21/minecraft/256/Tnt-icon.png"
+                src={
+                  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" +
+                  this.state.details.id +
+                  ".png"
+                }
                 alt=""
                 width={280}
                 height={280}

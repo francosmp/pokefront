@@ -17,11 +17,15 @@ class Body extends React.Component {
             return (
               <Row className="p-0" key={(indexP + 1) / 15}>
                 {colsObjsT.map((objC, indexC) => {
+                  let src =
+                    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" +
+                    (indexP - 13 + indexC) +
+                    ".png";
                   return (
                     <Col className="p-1" key={indexC + 1}>
                       <img
                         className="hover-zoom"
-                        src="https://icons.iconarchive.com/icons/chrisl21/minecraft/256/Tnt-icon.png"
+                        src={src}
                         alt=""
                         width={64}
                         height={64}
