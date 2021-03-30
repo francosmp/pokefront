@@ -1,0 +1,27 @@
+img.hover-zoom {
+  transition: all 0.2s ease 0s;
+  width: 100%;
+}
+img.hover-zoom:hover {
+  transform: scale(1.25);
+}
+
+.columnl {
+  float: left;
+  width: 60%;
+  padding: 9px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+.columnr {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
